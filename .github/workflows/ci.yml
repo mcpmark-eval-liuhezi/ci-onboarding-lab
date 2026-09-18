@@ -1,0 +1,10 @@
+name: smoke
+
+on: [push, pull_request]
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: smoke check
+        run: echo "smoke ok"
